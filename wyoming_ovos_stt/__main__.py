@@ -4,6 +4,7 @@ import asyncio
 import logging
 from functools import partial
 
+from ovos_config import Configuration
 from ovos_plugin_manager.stt import OVOSSTTFactory
 from wyoming.info import AsrModel, AsrProgram, Attribution, Info
 from wyoming.server import AsyncServer
@@ -40,7 +41,6 @@ async def main() -> None:
     )
     _LOGGER.debug(args)
 
-    from ovos_config import Configuration
     cfg = Configuration().get("stt", {}).get(args.plugin_name, {})
     lang = cfg.get("lang") or Configuration().get("lang")
     stt = OVOSSTTFactory.create({"module": args.plugin_name,
