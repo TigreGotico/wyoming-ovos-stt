@@ -1,2 +1,2 @@
 wyoming
-httpx
+ovos-plugin-manager
