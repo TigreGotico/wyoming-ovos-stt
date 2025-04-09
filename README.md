@@ -25,3 +25,5 @@ e.g.  to use the ovos public servers
 > wyoming-ovos-stt --uri tcp://0.0.0.0:7891 --debug --plugin-name ovos-stt-plugin-server 
 
 plugin config is read from mycroft.conf 
+
+![image](https://github.com/user-attachments/assets/01396553-5662-49e8-a5be-58df6f758b64)
